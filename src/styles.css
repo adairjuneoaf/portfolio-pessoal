@@ -1,0 +1,163 @@
+:root {
+  --black: #000000;
+  --violet-dark: #261932;
+  --violet: #82589f;
+  --violet-light: #d3cadd;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background: var(--violet-dark);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.title {
+  font: 700 2.5rem "DM Sans", sans-serif;
+  color: var(--black);
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*===========================MENU MOBILE===========================*/
+
+.tela-menu {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tela-menu .icon-close {
+  font: 700 2rem "Roboto", sans-serif;
+  color: var(--black);
+  top: 50px;
+  right: 50px;
+  position: absolute;
+}
+
+.tela-menu .icon-close:hover {
+  color: var(--violet);
+  transition: 0.3s;
+}
+
+.tela-menu .menu {
+  margin: 0;
+  background: var(--white);
+
+  width: 28.125rem;
+  height: 56.25rem;
+
+  border-radius: 0.375rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela-menu .menu ul {
+  padding: 0;
+  color: var(--black);
+}
+
+.tela-menu .menu a.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 4rem 0 4rem 0;
+
+  cursor: pointer;
+}
+
+.tela-menu .menu a:hover {
+  color: var(--violet);
+  transition: 0.3s;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*===========================TOPO DA PÁGINA===========================*/
+
+.bottom-page {
+  z-index: -1;
+  position: fixed;
+  margin-top: 1rem;
+  width: 28.125rem;
+  height: auto;
+
+  background: var(--white);
+
+  border-radius: 0.375rem;
+}
+
+.title-page {
+  margin: 0rem 1rem 0 1rem;
+  width: auto;
+  height: 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem;
+}
+
+.title-page a {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.title-page a:hover {
+  color: var(--violet);
+  transition: 0.3s;
+}
+
+.title-page h3 {
+  margin: 0;
+  font: 700 1.5rem "DM Sans", sans-serif;
+  color: var(--violet);
+
+  cursor: pointer;
+}
