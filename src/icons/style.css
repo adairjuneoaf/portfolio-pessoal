@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kp57f0');
+  src:  url('fonts/icomoon.eot?kp57f0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kp57f0') format('truetype'),
+    url('fonts/icomoon.woff?kp57f0') format('woff'),
+    url('fonts/icomoon.svg?kp57f0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-javascript .path1:before {
+  content: "\e900";
+  color: ;
+}
+.icon-javascript .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-javascript .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-html:before {
+  content: "\e903";
+}
+.icon-css:before {
+  content: "\e904";
+}
+.icon-html_file_icon:before {
+  content: "\e905";
+}
+.icon-typescript:before {
+  content: "\e906";
+}
+.icon-sql:before {
+  content: "\e907";
+}
+.icon-python:before {
+  content: "\e908";
+}
+.icon-oracle:before {
+  content: "\e909";
+}
+.icon-menu:before {
+  content: "\e90a";
+}
+.icon-Amazon_Web_Services_Logo:before {
+  content: "\e90b";
+}
+.icon-linkedin .path1:before {
+  content: "\e90c";
+  color: ;
+}
+.icon-linkedin .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-linkedin .path3:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-linkedin .path4:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-github:before {
+  content: "\e910";
+}
+.icon-facebook:before {
+  content: "\e911";
+}
+.icon-rocket:before {
+  content: "\e912";
+}
+.icon-website:before {
+  content: "\e913";
+}
+.icon-twitter:before {
+  content: "\e914";
+}
+.icon-figma:before {
+  content: "\e915";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-briefcase:before {
+  content: "\e917";
+}
+.icon-bubble:before {
+  content: "\e918";
+}
+.icon-home:before {
+  content: "\e919";
+}
+.icon-profile:before {
+  content: "\e91a";
+}
+.icon-user:before {
+  content: "\e91b";
+}
+.icon-nodejs-seeklogocom:before {
+  content: "\e91c";
+}
+.icon-java:before {
+  content: "\e91d";
+}
