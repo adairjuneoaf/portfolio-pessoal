@@ -185,7 +185,7 @@ ul {
 #main img {
   margin-top: 3.125rem;
 
-  width: 220px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
   border: 0.25rem solid var(--violet-light);
@@ -197,14 +197,14 @@ ul {
 }
 
 .conteudo .informacoes h3 {
-  font: 700 2.25rem "DM Sans", sans serif;
+  font: 700 2rem "DM Sans", sans serif;
   color: var(--violet-light);
 
   margin: 0 0 1.5rem 0;
 }
 
 .conteudo .informacoes p {
-  font: 700 1.5rem "DM Sans", sans serif;
+  font: 700 1.125rem "DM Sans", sans serif;
   color: var(--violet-light);
 
   margin: 0;
@@ -242,7 +242,7 @@ ul {
 
   height: 2.5rem;
 
-  border-radius: 00.375rem;
+  border-radius: 0.375rem;
 
   display: flex;
   align-items: center;
@@ -252,6 +252,6 @@ ul {
 #footer section p {
   margin: 0;
 
-  font: 700 1rem "DM Sans", sans serif;
+  font: 700 0.8rem "DM Sans", sans serif;
   color: var(--black);
 }
