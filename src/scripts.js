@@ -23,7 +23,7 @@ const scrollTop = ScrollReveal({
 })
 
 scrollTop.reveal(
-    `#header, #main .imagem, #main .informacoes, .midias-sociais .midia`,
+    `.bottom-page, #main .imagem, #main .informacoes, .midias-sociais .midia`,
     {
         interval: 500
     }

@@ -61,6 +61,8 @@ ul {
 
   opacity: 0;
   visibility: hidden;
+
+  z-index: 100;
 }
 
 .tela-menu .menu {
@@ -116,9 +118,8 @@ ul {
 }
 
 /*===========================TOPO DA PÁGINA===========================*/
-#header {
+.top-page {
   margin: 1rem 0 0 0;
-
   position: fixed;
   top: 0;
   left: 1rem;
@@ -143,7 +144,7 @@ ul {
 }
 
 .title-page a {
-  margin: 0;
+  margin-right: 1rem;
   font-size: 1.5rem;
   color: var(--black);
 }
@@ -154,17 +155,11 @@ ul {
 }
 
 .title-page h3 {
-  margin: 0;
+  margin-left: 1rem;
   font: 700 1.5rem "DM Sans", sans-serif;
   color: var(--black);
 
   cursor: pointer;
-}
-
-.bottom-page {
-  background: var(--white);
-
-  border-radius: 0.375rem;
 }
 
 /*===========================CONTEUDO DA PAGINA===========================*/
