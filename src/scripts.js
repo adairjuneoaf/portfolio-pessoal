@@ -1,4 +1,4 @@
-const menu = document.querySelector('#header section')
+const menu = document.querySelector('#header section div.tela-menu')
 const openMenu = document.querySelectorAll('section .open-menu')
 const closeMenu = document.querySelectorAll('section .close-menu')
 

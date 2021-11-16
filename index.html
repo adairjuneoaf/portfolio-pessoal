@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="shortcut icon"
+      href="src/images/ico_portfolio.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="stylesheet" href="src/icons/style.css" />
 
@@ -18,51 +24,111 @@
   </head>
   <body>
     <header id="header">
-      <section id="menu" class="tela-menu">
-        <a href="#" class="icon-close close-menu"></a>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#" class="title"
-                ><span class="icon-home span-icons"> </span>Início</a
-              >
-            </li>
-            <li>
-              <a href="#" class="title"
-                ><span class="icon-user span-icons"> </span>Sobre mim</a
-              >
-            </li>
-            <li>
-              <a href="#" class="title">
-                <span class="icon-profile span-icons"> </span>Resumo</a
-              >
-            </li>
-            <li>
-              <a href="#" class="title"
-                ><span class="icon-briefcase span-icons"> </span>Portifolio</a
-              >
-            </li>
-            <li>
-              <a href="#" class="title"
-                ><span class="icon-bubble span-icons"> </span>Contato</a
-              >
-            </li>
-          </ul>
-        </nav>
+      <section id="section-menu" class="container">
+        <div class="bottom-page">
+          <nav class="title-page">
+            <h3><span class="icon-home"></span> Início</h3>
+            <a href="#" class="icon-menu open-menu"></a>
+          </nav>
+        </div>
+        <div id="menu" class="tela-menu">
+          <a href="#" class="icon-close close-menu"></a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#" class="title"
+                  ><span class="icon-home span-icons"> </span>Início</a
+                >
+              </li>
+              <li>
+                <a href="#" class="title"
+                  ><span class="icon-user span-icons"> </span>Sobre mim</a
+                >
+              </li>
+              <li>
+                <a href="#" class="title">
+                  <span class="icon-profile span-icons"> </span>Resumo</a
+                >
+              </li>
+              <li>
+                <a href="#" class="title"
+                  ><span class="icon-briefcase span-icons"> </span>Portifolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="title"
+                  ><span class="icon-bubble span-icons"> </span>Contato</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </section>
     </header>
 
     <main id="main" class="container">
-      <section class="bottom-page">
-        <nav class="title-page">
-          <h3><span class="icon-home"></span> Início</h3>
-          <a href="#" class="icon-menu open-menu"></a>
-        </nav>
+      <div class="imagem">
+        <img
+          src="src/images/profile.jpg"
+          alt="Foto de perfil do usuário."
+          class="imagem-usuario"
+        />
+      </div>
+
+      <section class="conteudo">
+        <div class="informacoes">
+          <h3 class="nome">Adair Juneo</h3>
+          <p>Desenvolvedor Full-Stack</p>
+          <p>CTO of Prisma Systems</p>
+        </div>
+        <div class="midias-sociais">
+          <a
+            href="https://www.prismasystems.com.br/"
+            class="midia"
+            title="Prisma Systems"
+            target="_blank"
+            ><span class="icon-website"></span></a
+          ><a
+            href="https://github.com/adairjuneoaf"
+            class="midia"
+            title="GitHub de Adair Juneo"
+            target="_blank"
+            ><span class="icon-github"></span></a
+          ><a
+            href="https://app.rocketseat.com.br/me/adair-juneo-00840"
+            class="midia"
+            title="Rocketseat de Adair Juneo"
+            target="_blank"
+            ><span class="icon-rocket"></span></a
+          ><a
+            href="https://www.linkedin.com/in/adair-juneo-74322a216/"
+            class="midia"
+            title="Linkedin de Adair Juneo"
+            target="_blank"
+            ><span class="icon-website"></span></a
+          ><a
+            href="https://www.facebook.com/adair.juneo"
+            class="midia"
+            title="Facebook de Adair Juneo"
+            target="_blank"
+            ><span class="icon-facebook"></span></a
+          ><a
+            href="https://twitter.com/_adair_juneo"
+            class="midia"
+            title="Twitter de Adair Juneo"
+            target="_blank"
+            ><span class="icon-twitter"></span
+          ></a>
+        </div>
       </section>
     </main>
 
     <footer id="footer">
-      <section class="copyright"></section>
+      <section class="copyright">
+        <p>
+          &copy; Prisma Systems by Adair Juneo | Todos os direitos reservados.
+        </p>
+      </section>
     </footer>
 
     <script src="src/scripts.js"></script>
