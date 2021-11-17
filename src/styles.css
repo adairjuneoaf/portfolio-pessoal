@@ -7,6 +7,7 @@
 }
 
 body {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 
@@ -40,6 +41,24 @@ ul {
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+span.title-violet {
+  color: var(--violet);
+}
+
+h3.title-sections {
+  font: 700 2rem "DM Sans", sans-serif;
+  color: var(--violet-light);
+  margin: 1rem 0 1rem 0;
+}
+
+p.paragraph-sections {
+  font: 700 1.125rem "DM Sans", sans-serif;
+  color: var(--violet-light);
+  margin: 1rem 0 1rem 0;
+
+  text-align: justify;
 }
 
 /*===========================MENU MOBILE===========================*/
@@ -105,6 +124,8 @@ ul {
   top: 3rem;
   right: 3rem;
   position: absolute;
+
+  cursor: pointer;
 }
 
 .tela-menu .icon-close:hover {
@@ -112,9 +133,17 @@ ul {
   transition: 0.3s;
 }
 
+.icon-menu {
+  cursor: pointer;
+}
+
 .active {
   opacity: 1;
   visibility: visible;
+}
+
+.corpo {
+  margin-bottom: 5.5rem;
 }
 
 /*===========================TOPO DA PÁGINA===========================*/
@@ -145,7 +174,7 @@ ul {
 
 .title-page a {
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--black);
 }
 
@@ -156,13 +185,18 @@ ul {
 
 .title-page h3 {
   margin-left: 1rem;
-  font: 700 1.5rem "DM Sans", sans-serif;
+  font: 700 1rem "DM Sans", sans-serif;
   color: var(--black);
 
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/*===========================CONTEUDO DA PAGINA===========================*/
+/*===========================CONTEUDO INICIO DA PAGINA===========================*/
+.inactive {
+  display: none;
+}
 
 #main {
   margin-top: 5.5rem;
@@ -222,6 +256,36 @@ ul {
 .midias-sociais .midia:hover {
   color: var(--violet);
 }
+/*===========================CONTEUDO SOBRE DA PAGINA===========================*/
+
+.habilidades-profissionais {
+  display: flex;
+  flex-flow: row wrap;
+
+  gap: 0.625rem;
+}
+
+span.habilidades {
+  font: 700 1rem "DM Sans", sans serif;
+  color: var(--violet-light);
+
+  background-color: var(--violet);
+  border-radius: 0.5rem;
+
+  display: flex;
+
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+/*===========================CONTEUDO RESUMO DA PAGINA===========================*/
+
+.apps .app span {
+  font-size: 2rem;
+  background: var(--violet-light);
+  color: var(--violet-dark);
+}
 
 /*===========================RODAPE DA PAGINA===========================*/
 
@@ -231,7 +295,6 @@ ul {
   bottom: 0;
   left: 1rem;
   right: 1rem;
-  z-index: -1;
   background: var(--white);
   text-align: center;
 
@@ -247,6 +310,6 @@ ul {
 #footer section p {
   margin: 0;
 
-  font: 700 0.8rem "DM Sans", sans serif;
+  font: 700 0.7rem "DM Sans", sans serif;
   color: var(--black);
 }

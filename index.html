@@ -22,41 +22,42 @@
     />
     <title>Adair Juneo | Desenvolvedor Full-Stack</title>
   </head>
+
   <body>
     <header id="header">
       <section id="section-menu" class="container">
         <div class="top-page">
           <nav class="title-page">
             <h3><span class="icon-home"></span> Início</h3>
-            <a href="#" class="icon-menu open-menu"></a>
+            <a class="icon-menu open-menu"></a>
           </nav>
         </div>
         <div id="menu" class="tela-menu">
-          <a href="#" class="icon-close close-menu"></a>
+          <a class="icon-close close-menu"></a>
           <nav class="menu">
             <ul>
               <li>
-                <a href="/" class="title"
+                <a href="javascript:toggle('inicio')" class="title"
                   ><span class="icon-home span-icons"> </span>Início</a
                 >
               </li>
               <li>
-                <a href="#" class="title"
+                <a href="javascript:toggle('sobre')" class="title"
                   ><span class="icon-user span-icons"> </span>Sobre mim</a
                 >
               </li>
               <li>
-                <a href="#" class="title">
+                <a href="javascript:toggle('resumo')" class="title">
                   <span class="icon-profile span-icons"> </span>Resumo</a
                 >
               </li>
               <li>
-                <a href="#" class="title"
+                <a href="javascript:toggle('portifolio')" class="title"
                   ><span class="icon-briefcase span-icons"> </span>Portifólio</a
                 >
               </li>
               <li>
-                <a href="#" class="title"
+                <a href="javascript:toggle('contato')" class="title"
                   ><span class="icon-bubble span-icons"> </span>Contato</a
                 >
               </li>
@@ -67,58 +68,218 @@
     </header>
 
     <main id="main" class="container">
-      <div class="imagem">
-        <img
-          src="src/images/profile.jpg"
-          alt="Foto de perfil do usuário."
-          class="imagem-usuario"
-        />
-      </div>
-
-      <section class="conteudo">
-        <div class="informacoes">
-          <h3 class="nome">Adair Juneo</h3>
-          <p>Desenvolvedor Full-Stack</p>
-          <p>Founder & CTO of Prisma Systems</p>
+      <section id="inicio" class="sections">
+        <div class="imagem">
+          <img
+            src="src/images/profile.jpg"
+            alt="Foto de perfil do usuário."
+            class="imagem-usuario"
+          />
         </div>
-        <div class="midias-sociais">
-          <a
-            href="https://www.prismasystems.com.br/"
-            class="midia"
-            title="Prisma Systems"
-            target="_blank"
-            ><span class="icon-website"></span></a
-          ><a
-            href="https://github.com/adairjuneoaf"
-            class="midia"
-            title="GitHub de Adair Juneo"
-            target="_blank"
-            ><span class="icon-github"></span></a
-          ><a
-            href="https://app.rocketseat.com.br/me/adair-juneo-00840"
-            class="midia"
-            title="Rocketseat de Adair Juneo"
-            target="_blank"
-            ><span class="icon-rocket"></span></a
-          ><a
-            href="https://www.linkedin.com/in/adair-juneo-74322a216/"
-            class="midia"
-            title="Linkedin de Adair Juneo"
-            target="_blank"
-            ><span class="icon-website"></span></a
-          ><a
-            href="https://www.facebook.com/adair.juneo"
-            class="midia"
-            title="Facebook de Adair Juneo"
-            target="_blank"
-            ><span class="icon-facebook"></span></a
-          ><a
-            href="https://twitter.com/_adair_juneo"
-            class="midia"
-            title="Twitter de Adair Juneo"
-            target="_blank"
-            ><span class="icon-twitter"></span
-          ></a>
+
+        <section class="conteudo">
+          <div class="informacoes">
+            <h3 class="nome">Adair Juneo</h3>
+            <p>Desenvolvedor Full-Stack</p>
+            <p>Founder & CTO of Prisma Systems</p>
+          </div>
+          <div class="midias-sociais">
+            <a
+              href="https://www.prismasystems.com.br/"
+              class="midia"
+              title="Prisma Systems"
+              target="_blank"
+              ><span class="icon-website"></span></a
+            ><a
+              href="https://github.com/adairjuneoaf"
+              class="midia"
+              title="GitHub de Adair Juneo"
+              target="_blank"
+              ><span class="icon-github"></span></a
+            ><a
+              href="https://app.rocketseat.com.br/me/adair-juneo-00840"
+              class="midia"
+              title="Rocketseat de Adair Juneo"
+              target="_blank"
+              ><span class="icon-rocket"></span></a
+            ><a
+              href="https://www.linkedin.com/in/adair-juneo-74322a216/"
+              class="midia"
+              title="Linkedin de Adair Juneo"
+              target="_blank"
+              ><span class="icon-website"></span></a
+            ><a
+              href="https://www.facebook.com/adair.juneo"
+              class="midia"
+              title="Facebook de Adair Juneo"
+              target="_blank"
+              ><span class="icon-facebook"></span></a
+            ><a
+              href="https://twitter.com/_adair_juneo"
+              class="midia"
+              title="Twitter de Adair Juneo"
+              target="_blank"
+              ><span class="icon-twitter"></span
+            ></a>
+          </div>
+        </section>
+      </section>
+
+      <section id="sobre" class="sections inactive">
+        <div class="top-page">
+          <nav class="title-page">
+            <h3><span class="icon-user"></span> Sobre mim</h3>
+            <a href="#" class="icon-menu open-menu"></a>
+          </nav>
+        </div>
+
+        <section class="corpo conteudo-sobre-mim">
+          <div class="sobre-mim">
+            <h3 class="title-sections">
+              Sobre <span class="title-violet">mim</span>
+            </h3>
+            <p class="paragraph-sections">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              ipsam aperiam temporibus mollitia? Iusto, saepe impedit! Natus
+              magnam laborum, corporis blanditiis eveniet tempora, amet facilis
+              eum nam officiis, quasi sit?
+            </p>
+          </div>
+
+          <div class="oque-faco">
+            <h3 class="title-sections">
+              Oque <span class="title-violet">faço</span>
+            </h3>
+            <p class="paragraph-sections">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              dolor ex? Nostrum porro temporibus molestias corrupti pariatur
+              impedit numquam suscipit modi fugiat magnam, enim qui dolorem
+              delectus quas assumenda totam.
+            </p>
+          </div>
+
+          <div class="informacoes-pessoais">
+            <p class="paragraph-sections">
+              <span class="title-violet">idade </span>23 Anos
+            </p>
+            <p class="paragraph-sections">
+              <span class="title-violet">residência </span>Rua Bélgica,
+              Independência, Montes Claros - MG
+            </p>
+            <p class="paragraph-sections">
+              <span class="title-violet">e-mail </span>
+              adair.juneo@prismasystems.com.br
+            </p>
+            <p class="paragraph-sections">
+              <span class="title-violet">telefone </span>+55 38 9 9924 0369
+            </p>
+          </div>
+
+          <div class="habilid-profissionais">
+            <h3 class="title-sections">
+              Habilidades <span class="title-violet">profissionais</span>
+            </h3>
+            <div class="habilidades-profissionais">
+              <span class="habilidades">Desenvolvimento WEB</span
+              ><span class="habilidades">Lógica de programação</span
+              ><span class="habilidades">Front-end</span
+              ><span class="habilidades">Acompanhamento de projetos</span
+              ><span class="habilidades">Back-end</span
+              ><span class="habilidades">SQL</span
+              ><span class="habilidades">Banco de dados</span
+              ><span class="habilidades">ORACLE</span
+              ><span class="habilidades">Planejamento estratégico</span
+              ><span class="habilidades">Ambiente Linux</span
+              ><span class="habilidades">Facilidade com números</span
+              ><span class="habilidades">Sistemas ERP</span
+              ><span class="habilidades">Coordenação e Prazos</span
+              ><span class="habilidades">Ambiente Windows</span
+              ><span class="habilidades">Business Intelligence</span
+              ><span class="habilidades">a</span
+              ><span class="habilidades">a</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="resumo" class="sections inactive">
+        <div class="top-page">
+          <nav class="title-page">
+            <h3><span class="icon-profile"></span> Resumo</h3>
+            <a href="#" class="icon-menu open-menu"></a>
+          </nav>
+        </div>
+
+        <section class="corpo conteudo-resumo">
+          <div class="historico-educacional">
+            <h3 class="title-sections">
+              Histórico<span class="title-violet"> educacional</span>
+            </h3>
+            <p class="paragraph-sections">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur doloribus alias voluptate. Illo vel repellendus facilis
+              illum corrupti dolorem ipsa quidem animi minus dolor, omnis
+              molestiae perspiciatis, veniam exercitationem. Soluta.
+            </p>
+          </div>
+          <div class="historico-profissional">
+            <h3 class="title-sections">
+              Histórico<span class="title-violet"> profissional</span>
+            </h3>
+            <p class="paragraph-sections">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur doloribus alias voluptate. Illo vel repellendus facilis
+              illum corrupti dolorem ipsa quidem animi minus dolor, omnis
+              molestiae perspiciatis, veniam exercitationem. Soluta.
+            </p>
+          </div>
+          <div class="meu-conhecimento">
+            <h3 class="title-sections">
+              Meu<span class="title-violet"> conhecimento</span>
+            </h3>
+
+            <div class="apps">
+              <div class="app"><span class="icon-html"></span>HTML</div>
+              <div class="app"><span class="icon-css"></span>CSS</div>
+              <div class="app">
+                <span class="icon-javascript"></span>Java Script
+              </div>
+              <div class="app"><span class="icon-sql"></span>SQL</div>
+              <div class="app"><span class="icon-oracle"></span>Oracle</div>
+              <div class="app">
+                <span class="icon-nodejs-seeklogocom"></span>Node.js
+              </div>
+              <div class="app">
+                <span class="icon-html_file_icon"></span>React
+              </div>
+              <div class="app">
+                <span class="icon-typescript"></span>Typescript
+              </div>
+              <div class="app"><span class="icon-python"></span>Python</div>
+              <div class="app"><span class="icon-java"></span>Java</div>
+              <div class="app">
+                <span class="icon-Amazon_Web_Services_Logo"></span>Amazon AWS
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="portifolio" class="sections inactive">
+        <div class="top-page">
+          <nav class="title-page">
+            <h3><span class="icon-briefcase"></span> Portfólio</h3>
+            <a href="#" class="icon-menu open-menu"></a>
+          </nav>
+        </div>
+      </section>
+
+      <section id="contato" class="sections inactive">
+        <div class="top-page">
+          <nav class="title-page">
+            <h3><span class="icon-bubble"></span> Contato</h3>
+            <a href="#" class="icon-menu open-menu"></a>
+          </nav>
         </div>
       </section>
     </main>
