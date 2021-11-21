@@ -25,7 +25,7 @@ for(const abreFechaMenu of clickMenu){
     })
 }
 
-const optionsMenu = [ "inicio", "sobre", "resumo", "portifolio", "contato" ];
+const optionsMenu = [ "inicio", "sobre", "resumo", "portfolio", "contato" ];
 
 function toggle(sectionSelecionada) {
     let sections
