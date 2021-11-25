@@ -37,6 +37,13 @@ function toggle(sectionSelecionada) {
     sections.style.display = 'block';
 }
 
+const enviarFormulario = document.querySelectorAll('.botao-formulario button')
+
+for(const alerta of enviarFormulario){
+    alerta.addEventListener('click', ()=>{
+    window.alert('Portifólio em desenvolvimento...')
+})
+}
 
 /*
 const scrollTop = ScrollReveal({
@@ -65,3 +72,5 @@ scrollBottom.reveal(
     }
 )
 */
+
+
