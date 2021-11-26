@@ -39,8 +39,8 @@ ul {
 }
 
 .container {
-  margin-left: 1.5%;
-  margin-right: 1.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 span.title-violet {
@@ -155,8 +155,8 @@ p.paragraph-sections {
   margin: 1rem 0 0 0;
   position: fixed;
   top: 0;
-  left: 1%;
-  right: 1%;
+  left: 2%;
+  right: 2%;
   z-index: 0;
 
   background: var(--white);
@@ -460,7 +460,7 @@ progress[value]::-webkit-progress-value {
   border-radius: 0.375rem;
   border-style: solid;
 
-  width: 100%;
+  width: auto;
   height: auto;
   height: 25rem;
 
@@ -609,8 +609,8 @@ progress[value]::-webkit-progress-value {
   position: fixed;
   margin-bottom: 1rem;
   bottom: 0;
-  left: 1%;
-  right: 1%;
+  left: 2%;
+  right: 2%;
   background: var(--white);
   text-align: center;
 
