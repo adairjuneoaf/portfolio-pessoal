@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
 
     <link
       rel="shortcut icon"
@@ -410,8 +411,8 @@
               <div class="app">
                 <span class="icon-html5"></span>
                 <div class="progress-habilidade">
-                  HTML<progress class="progress-bar" value="88" max="100">
-                    88%
+                  HTML<progress class="progress-bar" value="95" max="100">
+                    95%
                   </progress>
                 </div>
               </div>
@@ -419,7 +420,7 @@
                 <span class="icon-css3"></span>
                 <div class="progress-habilidade">
                   CSS<progress class="progress-bar" value="90" max="100">
-                    32%
+                    90%
                   </progress>
                 </div>
               </div>
@@ -428,10 +429,10 @@
                 <div class="progress-habilidade">
                   Java Script<progress
                     class="progress-bar"
-                    value="75"
+                    value="80"
                     max="100"
                   >
-                    75%
+                    80%
                   </progress>
                 </div>
               </div>
@@ -446,32 +447,32 @@
               <div class="app">
                 <span class="icon-oracle"></span>
                 <div class="progress-habilidade">
-                  ORACLE<progress class="progress-bar" value="98" max="100">
-                    98%
+                  ORACLE<progress class="progress-bar" value="92" max="100">
+                    92%
                   </progress>
                 </div>
               </div>
               <div class="app">
                 <span class="icon-nodejs"></span>
                 <div class="progress-habilidade">
-                  Node.js<progress class="progress-bar" value="70" max="100">
-                    70%
+                  Node.js<progress class="progress-bar" value="80" max="100">
+                    80%
                   </progress>
                 </div>
               </div>
               <div class="app">
                 <span class="icon-react"></span>
                 <div class="progress-habilidade">
-                  React<progress class="progress-bar" value="25" max="100">
-                    25%
+                  React<progress class="progress-bar" value="35" max="100">
+                    35%
                   </progress>
                 </div>
               </div>
               <div class="app">
                 <span class="icon-typescript"></span>
                 <div class="progress-habilidade">
-                  Typescript<progress class="progress-bar" value="15" max="100">
-                    15%
+                  Typescript<progress class="progress-bar" value="25" max="100">
+                    25%
                   </progress>
                 </div>
               </div>
@@ -494,8 +495,8 @@
               <div class="app">
                 <span class="icon-aws"></span>
                 <div class="progress-habilidade">
-                  AWS<progress class="progress-bar" value="66" max="100">
-                    66%
+                  AWS<progress class="progress-bar" value="70" max="100">
+                    70%
                   </progress>
                 </div>
               </div>
@@ -629,30 +630,48 @@
           </p>
 
           <div class="formulario-contato">
-            <form action="#">
+            <div id="status" class="status"></div>
+            <form
+              id="my-form"
+              action="https://formspree.io/f/moqranjk"
+              method="POST"
+            >
               <div>
                 <label for="assunto">Assunto</label>
-                <input type="text" max-length="30" id="assunto" />
+                <input
+                  type="text"
+                  name="Assunto"
+                  max-length="30"
+                  id="assunto"
+                  required
+                />
               </div>
 
               <div>
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" />
+                <input type="text" name="Nome" id="nome" required />
               </div>
 
               <div>
                 <label for="email">E-mail</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" name="E-mail" required />
               </div>
 
               <div>
                 <label for="msg">Mensagem</label>
-                <textarea id="msg" rows="8" cols="" maxlength="550"></textarea>
+                <textarea
+                  id="msg"
+                  name="Mensagem"
+                  rows="8"
+                  cols=""
+                  maxlength="550"
+                  required
+                ></textarea>
+              </div>
+              <div class="botao-formulario">
+                <button type="submit" name="enviar">ENVIAR</button>
               </div>
             </form>
-            <div class="botao-formulario">
-              <button href="#" name="enviar">ENVIAR</button>
-            </div>
           </div>
 
           <div class="informacoes-contato">

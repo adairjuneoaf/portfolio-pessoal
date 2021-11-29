@@ -37,6 +37,7 @@ function toggle(sectionSelecionada) {
     sections.style.display = 'block';
 }
 
+/*
 const enviarFormulario = document.querySelectorAll('.botao-formulario button')
 
 for(const alerta of enviarFormulario){
@@ -44,6 +45,8 @@ for(const alerta of enviarFormulario){
     window.alert('Portifólio em desenvolvimento...')
 })
 }
+*/
+
 
 /*
 const scrollTop = ScrollReveal({
@@ -73,4 +76,50 @@ scrollBottom.reveal(
 )
 */
 
+
+
+
+
+
+/*for(const eventoAlerta of enviarFormulario){
+    eventoAlerta.addEventListener('click', () =>{
+        status.classList.toggle('status-positive')
+        setTimeout(finish, timeOut)
+    })    
+}
+*/
+
+
+
+var form = document.getElementById("my-form");
+    
+async function handleSubmit(event) {
+    event.preventDefault();
+    const timeOut = 3000
+    var status = document.getElementById("status");
+    var data = new FormData(event.target);
+    console.log(status);
+    console.log(data);
+    const finish = () => { 
+        status.classList.remove('status-negative')
+        status.classList.remove('status-positive')
+    }
+    fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+    }).then(response => {
+    status.classList.add('status-positive')
+    status.innerHTML = "Mensagem recebida com sucesso, muito obrigado!";
+    form.reset()
+    setTimeout(finish, timeOut)
+    }).catch(error => {
+    status.classList.add('status-negative')
+    status.innerHTML = "Oops!"
+    setTimeout(finish, timeOut)
+    });
+}
+form.addEventListener("submit", handleSubmit)
 

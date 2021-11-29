@@ -537,6 +537,48 @@ progress[value]::-webkit-progress-value {
   border-radius: 0.375rem;
 }
 
+.formulario-contato .status {
+  position: absolute;
+  top: 1rem;
+  z-index: 200;
+  width: 350px;
+  right: 2%;
+  text-align: center;
+  padding: 0.8rem;
+
+  border-radius: 0.375rem;
+
+  font: 400 0.8rem "Ubuntu", sans serif;
+
+  color: var(--black);
+
+  background-color: var(--violet-light);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s 0s, transform 0.5s;
+}
+
+.formulario-contato .status-positive {
+  background-color: #32ff7e;
+  color: var(--black);
+
+  visibility: visible;
+  opacity: 1;
+
+  transition: visibility 0s linear 0s, opacity 0.5s 0s, transform 0.5s;
+}
+
+.formulario-contato .status-negative {
+  background-color: #ff4d4d;
+  color: var(--white);
+
+  visibility: visible;
+  opacity: 1;
+
+  transition: visibility 0s linear 0s, opacity 0.5s 0s, transform 0.5s;
+}
+
 .formulario-contato form div {
   padding: 0.5rem;
   display: flex;
@@ -553,6 +595,7 @@ progress[value]::-webkit-progress-value {
 .formulario-contato div textarea {
   border-radius: 0.25rem;
   border: none;
+  outline: none;
 
   padding: 0.25rem;
 
@@ -572,6 +615,7 @@ progress[value]::-webkit-progress-value {
   color: var(--violet-dark);
 
   border: none;
+  outline: none;
   border-radius: 0.25rem;
 
   width: fit-content;
@@ -586,6 +630,12 @@ progress[value]::-webkit-progress-value {
   cursor: pointer;
 
   align-items: center;
+
+  transition: 0.3s ease color;
+}
+
+.formulario-contato .botao-formulario button:hover {
+  color: var(--violet);
 }
 
 .informacoes-contato .tel a,
