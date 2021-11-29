@@ -538,7 +538,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .formulario-contato .status {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   z-index: 200;
   width: 350px;
