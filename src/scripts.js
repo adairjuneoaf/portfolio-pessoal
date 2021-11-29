@@ -47,7 +47,6 @@ for(const alerta of enviarFormulario){
 }
 */
 
-
 /*
 const scrollTop = ScrollReveal({
     origin: 'top',
@@ -76,11 +75,6 @@ scrollBottom.reveal(
 )
 */
 
-
-
-
-
-
 /*for(const eventoAlerta of enviarFormulario){
     eventoAlerta.addEventListener('click', () =>{
         status.classList.toggle('status-positive')
@@ -89,21 +83,19 @@ scrollBottom.reveal(
 }
 */
 
-
-
 var form = document.getElementById("my-form");
     
 async function handleSubmit(event) {
     event.preventDefault();
-    const timeOut = 3000
+    const timeOut = 3000;
     var status = document.getElementById("status");
     var data = new FormData(event.target);
-    console.log(status);
-    console.log(data);
+    
     const finish = () => { 
         status.classList.remove('status-negative')
         status.classList.remove('status-positive')
     }
+
     fetch(event.target.action, {
     method: form.method,
     body: data,
