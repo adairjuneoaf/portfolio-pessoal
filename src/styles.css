@@ -209,7 +209,12 @@ p.paragraph-sections {
   width: auto;
 }
 
-#main .imagem {
+#main .conteudo {
+  margin-top: 3.75rem;
+  text-align: center;
+}
+
+#inicio .imagem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,11 +227,6 @@ p.paragraph-sections {
   height: auto;
   border-radius: 50%;
   border: 0.25rem solid var(--violet-light);
-}
-
-#main .conteudo {
-  margin-top: 3.75rem;
-  text-align: center;
 }
 
 .conteudo .informacoes h3 {
@@ -246,9 +246,11 @@ p.paragraph-sections {
 .conteudo .midias-sociais {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   margin: 2.25rem 1rem 0 1rem;
+
+  gap: 2rem;
 }
 
 .midias-sociais .midia {
@@ -325,7 +327,7 @@ span.habilidades {
   width: 3rem;
 
   border-style: solid;
-  border-width: 0 0 4px 0;
+  border-width: 4px 4px 4px 4px;
   border-color: var(--violet);
   border-radius: 4px;
 }
@@ -388,7 +390,7 @@ span.habilidades {
   width: 3rem;
 
   border-style: solid;
-  border-width: 0 0 4px 0;
+  border-width: 4px 4px 4px 4px;
   border-color: var(--violet);
   border-radius: 4px;
 }
@@ -447,12 +449,32 @@ progress[value]::-webkit-progress-value {
 }
 
 .cards-projeto {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    "";
+}
+
+/*
+.cards-projeto {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
   gap: 1.5rem;
 }
+*/
 
 .cards-projeto .card {
   border: 0.125rem;
@@ -611,14 +633,14 @@ progress[value]::-webkit-progress-value {
 }
 
 .formulario-contato .botao-formulario button {
-  font: 700 1.125rem "Ubuntu", sans serif;
+  font: 700 1.4rem "Ubuntu", sans serif;
   color: var(--violet-dark);
 
   border: none;
   outline: none;
   border-radius: 0.25rem;
 
-  width: fit-content;
+  width: 100%;
   height: auto;
 
   padding: 0.5rem 2rem;
@@ -642,6 +664,11 @@ progress[value]::-webkit-progress-value {
 .informacoes-contato .email a {
   text-decoration: none;
   color: var(--violet);
+}
+
+.informacoes-contato .tel p,
+.informacoes-contato .email p {
+  text-align: center;
 }
 
 .informacoes-contato .tel,
@@ -769,13 +796,167 @@ progress[value]::-webkit-progress-value {
     cursor: pointer;
   }
 
+  /*===========================FOOTER===========================*/
+
   #footer section p {
     margin: 0;
 
     font: 700 0.8rem "Ubuntu", sans serif;
     color: var(--black);
   }
+
+  /*===========================CONTATO===========================*/
+
+  .conteudo-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario-contato {
+    width: 54rem;
+  }
+
+  .informacoes-contato {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .informacoes-contato .tel,
+  .informacoes-contato .email {
+    width: 25.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
+  /*===========================INICIO===========================*/
+  .conteudo .midias-sociais {
+    gap: 5rem;
+  }
+  .midias-sociais .midia {
+    font-size: 3rem;
+  }
+  .conteudo-sobre-mim {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0.5rem 1.5rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sobre-mim informacoes-pessoais"
+      "oque-faco habilid-profissionais";
+  }
+
+  /*===========================SOBRE MIM===========================*/
+
+  .sobre-mim {
+    grid-area: sobre-mim;
+  }
+
+  .oque-faco {
+    grid-area: oque-faco;
+  }
+
+  .informacoes-pessoais {
+    grid-area: informacoes-pessoais;
+  }
+
+  /*===========================RESUMO===========================*/
+
+  .habilid-profissionais {
+    grid-area: habilid-profissionais;
+  }
+
+  .conteudo-resumo {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem 1.5rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "historico-educacional meu-conhecimento"
+      "historico-profissional meu-conhecimento";
+  }
+
+  .historico-educacional {
+    grid-area: historico-educacional;
+  }
+
+  .historico-profissional {
+    grid-area: historico-profissional;
+  }
+
+  .meu-conhecimento {
+    grid-area: meu-conhecimento;
+  }
+
+  .historicos-educacionais {
+    margin: 1rem 0 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .historicos-profissionais {
+    margin: 1rem 0 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .historicos-profissionais .tempo-trabalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .historicos-educacionais div.divisor,
+  .historicos-profissionais div.divisor {
+    margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+
+    width: 0rem;
+    height: 0rem;
+
+    border-style: solid;
+    border-width: 25px 4px 4px 4px;
+    border-color: var(--violet);
+    border-radius: 4px;
+  }
+
+  /*===========================PORTFOLIO===========================*/
+
+  .cards-projeto {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px 24px;
+    grid-template-areas:
+      ". . . ."
+      ". . . .";
+  }
+
+  /*===========================CONTATO===========================*/
+
+  .formulario-contato {
+    width: 59.4rem;
+  }
+
+  .informacoes-contato {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .informacoes-contato .tel,
+  .informacoes-contato .email {
+    width: 27.88rem;
+  }
 }
