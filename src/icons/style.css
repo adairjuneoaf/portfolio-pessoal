@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?txdyoo');
-  src:  url('fonts/icomoon.eot?txdyoo#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?txdyoo') format('truetype'),
-    url('fonts/icomoon.woff?txdyoo') format('woff'),
-    url('fonts/icomoon.svg?txdyoo#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?d53i1g');
+  src:  url('fonts/icomoon.eot?d53i1g#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?d53i1g') format('truetype'),
+    url('fonts/icomoon.woff?d53i1g') format('woff'),
+    url('fonts/icomoon.svg?d53i1g#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,10 +25,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-sql:before {
-  content: "\e918";
-}
-.icon-aws:before {
+.icon-amazonaws:before {
   content: "\e900";
 }
 .icon-briefcase:before {
@@ -73,30 +70,36 @@
 .icon-menu:before {
   content: "\e90e";
 }
-.icon-nodejs:before {
+.icon-nextjs:before {
   content: "\e90f";
 }
-.icon-oracle:before {
+.icon-nodedotjs:before {
   content: "\e910";
 }
-.icon-python:before {
+.icon-oracle:before {
   content: "\e911";
 }
-.icon-react:before {
+.icon-python:before {
   content: "\e912";
 }
-.icon-rocket:before {
+.icon-react:before {
   content: "\e913";
 }
-.icon-twitter:before {
+.icon-rocket:before {
   content: "\e914";
 }
-.icon-typescript:before {
+.icon-sass:before {
   content: "\e915";
 }
-.icon-user:before {
+.icon-sql:before {
   content: "\e916";
 }
-.icon-website:before {
+.icon-twitter:before {
   content: "\e917";
+}
+.icon-typescript:before {
+  content: "\e918";
+}
+.icon-user:before {
+  content: "\e919";
 }
